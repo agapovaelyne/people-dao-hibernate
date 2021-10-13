@@ -21,9 +21,4 @@ public class PeopleRepository {
         return result;
     }
 
-    private void createStubEntities() {
-        entityManager.persist(new Person("Anna", "Bentley", 25, "Moscow"));
-        entityManager.persist(new Person("Andy", "Lauren", 32, "Moscow"));
-        entityManager.persist(new Person("Danny", "West", 45, "Saint-Petersburg"));
-    }
 }

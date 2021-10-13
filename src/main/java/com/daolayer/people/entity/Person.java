@@ -29,11 +29,4 @@ public class Person {
     private String phone_number;
     @Column
     private String city_of_living;
-
-    public Person(String name, String surname, int age, String city_of_living) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.city_of_living = city_of_living;
-    }
 }
