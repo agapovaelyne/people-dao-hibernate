@@ -25,7 +25,9 @@ public class Person {
     @Id
     private int age;
 
-    private String phone_number;
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
-    private String city_of_living;
+    @Column(name = "city_of_living")
+    private String cityOfLiving;
 }
