@@ -1,0 +1,4 @@
+GET http://localhost:8080/persons/by-city?city=Moscow
+Accept: application/json
+
+###
