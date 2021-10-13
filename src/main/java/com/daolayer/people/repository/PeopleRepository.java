@@ -38,7 +38,7 @@ public class PeopleRepository {
     }
 
     public List<Person> getPersonsByAgeLessThan(int age) {
-        return personRepository.findByAgeLessThan(age, Sort.by("age"));
+        return personRepository.findByAgeLessThan(age);
     }
 
     public Optional<List<Person>> getPersonByNameAndSurname(String name, String surname) {
