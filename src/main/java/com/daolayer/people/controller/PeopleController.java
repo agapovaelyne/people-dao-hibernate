@@ -19,6 +19,12 @@ public class PeopleController {
         this.peopleService = peopleService;
     }
 
+    @GetMapping("/main")
+    public String greeting() {
+        return "Hello user!";
+    }
+
+
     @ResponseBody
     @PostMapping()
     public String savePerson(@RequestBody Person person) throws JsonProcessingException {
