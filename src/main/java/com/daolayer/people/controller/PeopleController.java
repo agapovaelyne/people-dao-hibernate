@@ -13,7 +13,7 @@ import javax.persistence.EntityNotFoundException;
 @RestController
 @RequestMapping("/persons")
 public class PeopleController {
-    private PeopleService peopleService;
+    private final PeopleService peopleService;
 
     public PeopleController(PeopleService peopleService) {
         this.peopleService = peopleService;
